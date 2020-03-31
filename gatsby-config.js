@@ -41,5 +41,4 @@ module.exports = {
       resolve: `@contentful/rich-text-react-renderer`
     }
   ],
-  pathPrefix: "/raclim.github.io",
 }
