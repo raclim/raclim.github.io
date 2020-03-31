@@ -1,20 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
+import Layout from "../components/Layout"
+import Projects from "../components/Projects"
+import Emoji from "../components/Emoji"
+import SEO from "../components/Seo"
+import "../styles/index.scss"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <SEO title="love" keywords={['rachel lim', 'itp', 'creative', 'developer']} />
+    <div className='about'>
+      <p className='intro'> creative <Emoji symbol="🌝" label="rainbow"/> developer <Emoji symbol="💫" label="rainbow"/></p>
+      <p className='intro__detail'>I craft with vulnerability and humor. I love sharing a good giggle <Emoji symbol="🌈" label="rainbow"/>.</p>
+      <p className='intro__detail'>Currently, I am a Master's Candidate at NYU's <a href="https://tisch.nyu.edu/itp">Interactive Telecommunications Program</a>.</p>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Projects></Projects>
   </Layout>
 )
 

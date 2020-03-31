@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Maven+Pro|Roboto+Mono&display=swap');
+$bold-font: 'Maven Pro', sans-serif;
+$border: pink;
+.page {
+    width: 100%;
+    margin-right: 0.5rem;
+}
+
+.page__header {
+    width: 60%;
+    color: red;
+    padding-bottom: 0.8rem;
+    margin-left: 1.8rem;
+    border-bottom: 0.5rem dotted $border;
+    background-color: white;
+}
+.page__h2 {
+    margin: 0.5rem;
+    color: red;
+}
+
+.page__topics {
+    padding: 1rem 0 0 2rem;
+    font-size: 1rem;
+}
+
+.page__content {
+    margin: 2rem;
+    background-color: rgb(252, 244, 237);
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page__text {
+    margin: 1.5rem;
+    width: 100%;
+}
+
+.image {
+    justify-self: center;
+    border: 0.175rem dotted grey;
+    border-radius: 0.8rem;
+    box-shadow: 0.7rem 0.7rem 2rem tan;
+    // background-color: white;
+}
+.imageBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}
+.text {
+    font-family: $bold-font;
+    margin: 3rem 2rem;
+}
+
+.page__list {
+    list-style-type: disc;
+}
+
+.page__list__item {
+    margin: 0.5rem;
+}

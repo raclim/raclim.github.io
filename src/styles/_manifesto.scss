@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Chakra+Petch:wght@700&display=swap');
+
+$headers: 'Chakra Petch', sans-serif;
+$text: 'Roboto', sans-serif;
+$color-theme: seagreen;
+
+.background {
+    background-color: salmon;
+}
+
+.manifesto {
+    margin: 3rem 20%;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0.7rem 0.7rem 0 palegreen;
+    border-top: 0.1rem solid palegoldenrod;
+    border-left: 0.1rem solid palegoldenrod;
+}
+
+.man-link {
+    background-color: white;
+}
+
+.man__header1 {
+    font-size: 4rem;
+}
+
+.man__header1, .man__header2 {
+    font-family: $headers;
+    color: $color-theme;
+    background-color: white;
+    margin: 0.5rem 0;
+    padding: 0.3rem;
+}
+
+.man__header2 {
+    border-bottom: 0.1rem dotted $color-theme;
+}
+
+.man__header2:hover {
+    border-bottom: 0.1rem dashed orange;
+}
+
+.man__text {
+    color: darkgreen;
+    background-color: white;
+    margin: 1rem 0;
+    padding: 0.4rem;
+    border-radius: 0.8rem;
+    font-family: $text;
+}
+
+.man__text:hover {
+    border: 0.1rem solid orange;
+    background-color: white;
+    box-shadow: 0.3rem 0.3rem 0 orange;
+    font-weight: bold;
+}

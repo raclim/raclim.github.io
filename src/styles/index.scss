@@ -1,0 +1,122 @@
+@import 'cv';
+@import 'menu';
+@import 'header';
+@import 'projects';
+@import 'layout';
+@import 'page';
+@import 'manifesto';
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Maven+Pro|Roboto+Mono&display=swap');
+
+$primary-font: 'Roboto Mono', monospace;
+$header-font: 'Fredoka One', cursive;
+$bold-font: 'Maven Pro', sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  background-color: white;
+  font-family: $primary-font;
+  font-size: 16px;
+}
+
+a {
+  padding: 0.2rem;
+  color: red;
+}
+
+a:focus {
+  border: 0.1rem dashed pink;
+  border-radius: 0.8rem;
+}
+
+a:hover {
+  color: black;
+  font-weight: bolder;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 0.8rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $header-font;
+}
+
+.about {
+  // height: 20vh;
+  margin-bottom: 3rem;
+}
+
+.intro {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  width: 46%;
+  padding: 1rem;
+  border: 0.2rem outset pink;
+  border-radius: 2rem;
+  box-shadow: 0.4rem 0.4rem 0.1rem rgb(238, 204, 174);
+
+}
+
+.intro__detail {
+  font-family: $bold-font;
+  font-size: 0.95rem;
+  margin: 1rem 0.1rem;
+  padding: 0.4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .intro {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .html{
+      font-size: 12px;
+  }
+  .about {
+    // height: 24vh;
+    margin-bottom: 2rem;
+  }
+  .intro {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    width: 50%;
+    padding: 1rem; 
+  }
+  
+  .intro__detail {
+    width: 80%;
+    font-size: 0.8rem;
+    margin: 0.8rem 0.5rem;
+    padding: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .html{
+      font-size: 12px;
+  }
+  .about {
+    // height: 28vh;
+    margin-bottom: 3rem;
+  }
+  .intro {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    width: 65%;
+    padding: 1rem;
+  }
+  
+  .intro__detail {
+    width: 80%;
+    font-size: 0.8rem;
+    margin: 0.8rem 0.5rem;
+    padding: 0.4rem;
+  }
+}
